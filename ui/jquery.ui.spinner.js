@@ -32,9 +32,12 @@ $.widget( "ui.spinner", {
 	widgetEventPrefix: "spin",
 	options: {
 		culture: null,
+		orientation: 'right',
 		icons: {
 			down: "ui-icon-triangle-1-s",
-			up: "ui-icon-triangle-1-n"
+			up: "ui-icon-triangle-1-n",
+			left: "ui-icon-triangle-1-w",
+			right: "ui-icon-triangle-1-e"
 		},
 		incremental: true,
 		max: null,
@@ -192,6 +195,7 @@ $.widget( "ui.spinner", {
 			.attr( "autocomplete", "off" )
 			.wrap( this._uiSpinnerHtml() )
 			.parent()
+				.addClass( "ui-spinner-" + this.options.orientation )
 				// add buttons
 				.append( this._buttonHtml() );
 
@@ -243,13 +247,41 @@ $.widget( "ui.spinner", {
 	},
 
 	_buttonHtml: function() {
-		return "" +
-			"<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
-				"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
-			"</a>" +
-			"<a class='ui-spinner-button ui-spinner-down ui-corner-br'>" +
-				"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
-			"</a>";
+
+		switch (this.options.orientation) {
+		case 'right':
+			return "" +
+				"<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
+					"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
+				"</a>" +
+				"<a class='ui-spinner-button ui-spinner-down ui-corner-br'>" +
+					"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
+				"</a>";
+		case 'left':
+			return "" +
+				"<a class='ui-spinner-button ui-spinner-up ui-corner-tl'>" +
+					"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
+				"</a>" +
+				"<a class='ui-spinner-button ui-spinner-down ui-corner-bl'>" +
+					"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
+				"</a>";
+		case 'vertical':
+			return "" +
+				"<a class='ui-spinner-button ui-spinner-up ui-corner-top'>" +
+					"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
+				"</a>" +
+				"<a class='ui-spinner-button ui-spinner-down ui-corner-bottom'>" +
+					"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
+				"</a>";
+		case 'horizontal':
+			return "" +
+				"<a class='ui-spinner-button ui-spinner-up ui-corner-right'>" +
+					"<span class='ui-icon " + this.options.icons.right + "'>&#9658;</span>" +
+				"</a>" +
+				"<a class='ui-spinner-button ui-spinner-down ui-corner-left'>" +
+					"<span class='ui-icon " + this.options.icons.left + "'>&#9668;</span>" +
+				"</a>";
+		}
 	},
 
 	_start: function( event ) {
