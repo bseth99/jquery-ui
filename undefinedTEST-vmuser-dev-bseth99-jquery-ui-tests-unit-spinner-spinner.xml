@@ -1,0 +1,100 @@
+<testsuite name="undefined" errors="0" failures="0" tests="493" time="0" >
+	<testcase classname="spinner: common widget" name="JSHint" time="0.129" assertions="1">
+	</testcase>
+	<testcase classname="spinner: common widget" name="defined defaults" time="0.013" assertions="15">
+	</testcase>
+	<testcase classname="spinner: common widget" name="tested defaults" time="0.008" assertions="15">
+	</testcase>
+	<testcase classname="spinner: common widget" name="basic usage" time="0.074" assertions="3">
+	</testcase>
+	<testcase classname="spinner: common widget" name="version" time="0.003" assertions="1">
+	</testcase>
+	<testcase classname="spinner: core" name="keydown UP on input, increases value not greater than max" time="0.034" assertions="5">
+	</testcase>
+	<testcase classname="spinner: core" name="keydown DOWN on input, decreases value not less than min" time="0.031" assertions="5">
+	</testcase>
+	<testcase classname="spinner: core" name="keydown PAGE_UP on input, increases value not greater than max" time="0.026" assertions="5">
+	</testcase>
+	<testcase classname="spinner: core" name="keydown PAGE_DOWN on input, decreases value not less than min" time="0.025" assertions="5">
+	</testcase>
+	<testcase classname="spinner: core" name="mouse click on up button, increases value not greater than max" time="0.032" assertions="3">
+	</testcase>
+	<testcase classname="spinner: core" name="mouse click on up button, increases value not greater than max" time="0.023" assertions="3">
+	</testcase>
+	<testcase classname="spinner: core" name="mousewheel on input" time="0.018" assertions="4">
+	</testcase>
+	<testcase classname="spinner: core" name="reading HTML5 attributes" time="0.028" assertions="6">
+	</testcase>
+	<testcase classname="spinner: core" name="ARIA attributes" time="0.024" assertions="9">
+	</testcase>
+	<testcase classname="spinner: core" name="focus text field when pressing button" time="0.018" assertions="2">
+	</testcase>
+	<testcase classname="spinner: core" name="don&apos;t clear invalid value on blur" time="0.013" assertions="1">
+	</testcase>
+	<testcase classname="spinner: core" name="precision" time="0.016" assertions="2">
+	</testcase>
+	<testcase classname="spinner: events" name="start" time="0.05" assertions="6">
+	</testcase>
+	<testcase classname="spinner: events" name="spin" time="0.056" assertions="6">
+	</testcase>
+	<testcase classname="spinner: events" name="stop" time="0.047" assertions="6">
+	</testcase>
+	<testcase classname="spinner: events" name="change" time="0.125" assertions="14">
+	</testcase>
+	<testcase classname="spinner: methods" name="destroy" time="0.023" assertions="1">
+	</testcase>
+	<testcase classname="spinner: methods" name="disable" time="0.04" assertions="14">
+	</testcase>
+	<testcase classname="spinner: methods" name="enable" time="0.018" assertions="5">
+	</testcase>
+	<testcase classname="spinner: methods" name="pageDown" time="0.021" assertions="4">
+	</testcase>
+	<testcase classname="spinner: methods" name="pageUp" time="0.016" assertions="4">
+	</testcase>
+	<testcase classname="spinner: methods" name="stepDown" time="0.016" assertions="4">
+	</testcase>
+	<testcase classname="spinner: methods" name="stepUp" time="0.016" assertions="4">
+	</testcase>
+	<testcase classname="spinner: methods" name="value" time="0.016" assertions="2">
+	</testcase>
+	<testcase classname="spinner: methods" name="widget" time="0.013" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="icons: default " time="0.017" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="icons: custom " time="0.014" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="incremental, false" time="0.222" assertions="100">
+	</testcase>
+	<testcase classname="spinner: options" name="incremental, true" time="0.23" assertions="100">
+	</testcase>
+	<testcase classname="spinner: options" name="incremental, function" time="0.259" assertions="100">
+	</testcase>
+	<testcase classname="spinner: options" name="numberFormat, number" time="0.021" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="numberFormat, number, simple" time="0.015" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="numberFormat, currency" time="0.013" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="numberFormat, change" time="0.015" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="culture, null" time="0.014" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="currency, ja-JP" time="0.015" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="currency, change" time="0.013" assertions="2">
+	</testcase>
+	<testcase classname="spinner: options" name="max" time="0.015" assertions="3">
+	</testcase>
+	<testcase classname="spinner: options" name="max, string" time="0.014" assertions="3">
+	</testcase>
+	<testcase classname="spinner: options" name="min" time="0.014" assertions="3">
+	</testcase>
+	<testcase classname="spinner: options" name="min, string" time="0.015" assertions="3">
+	</testcase>
+	<testcase classname="spinner: options" name="step, 2" time="0.016" assertions="3">
+	</testcase>
+	<testcase classname="spinner: options" name="step, 0.7" time="0.02" assertions="1">
+	</testcase>
+	<testcase classname="spinner: options" name="step, string" time="0.014" assertions="2">
+	</testcase>
+</testsuite>

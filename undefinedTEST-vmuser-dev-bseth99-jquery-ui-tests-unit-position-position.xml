@@ -1,0 +1,44 @@
+<testsuite name="undefined" errors="0" failures="0" tests="84" time="0" >
+	<testcase classname="position" name="JSHint" time="0.147" assertions="1">
+	</testcase>
+	<testcase classname="position" name="my, at, of" time="0.024" assertions="4">
+	</testcase>
+	<testcase classname="position" name="multiple elements" time="0.01" assertions="3">
+	</testcase>
+	<testcase classname="position" name="positions" time="0.058" assertions="18">
+	</testcase>
+	<testcase classname="position" name="of" time="0.024" assertions="10">
+	</testcase>
+	<testcase classname="position" name="offsets" time="0.012" assertions="4">
+	</testcase>
+	<testcase classname="position" name="using" time="0.029" assertions="10">
+	</testcase>
+	<testcase classname="position" name="collision: fit, no collision" time="0.014" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: fit, collision" time="0.01" assertions="3">
+	</testcase>
+	<testcase classname="position" name="collision: flip, no collision" time="0.008" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: flip, collision" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: flipfit, no collision" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: flipfit, collision" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: none, no collision" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: none, collision" time="0.006" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: fit, with margin" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="position" name="collision: flip, with margin" time="0.009" assertions="3">
+	</testcase>
+	<testcase classname="position" name="within" time="0.022" assertions="6">
+	</testcase>
+	<testcase classname="position" name="with scrollbars" time="0.021" assertions="4">
+	</testcase>
+	<testcase classname="position" name="fractions" time="0.006" assertions="1">
+	</testcase>
+	<testcase classname="position" name="bug #5280: consistent results (avoid fractional values)" time="0.006" assertions="1">
+	</testcase>
+</testsuite>

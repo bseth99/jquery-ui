@@ -1,0 +1,98 @@
+<testsuite name="undefined" errors="0" failures="0" tests="150" time="0" >
+	<testcase classname="autocomplete: common widget" name="JSHint" time="0.137" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: common widget" name="defined defaults" time="0.016" assertions="16">
+	</testcase>
+	<testcase classname="autocomplete: common widget" name="tested defaults" time="0.008" assertions="16">
+	</testcase>
+	<testcase classname="autocomplete: common widget" name="basic usage" time="0.068" assertions="3">
+	</testcase>
+	<testcase classname="autocomplete: common widget" name="version" time="0.002" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="prevent form submit on enter when menu is active" time="0.059" assertions="2">
+	</testcase>
+	<testcase classname="autocomplete: core" name="allow form submit on enter when menu is not active" time="0.016" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="up arrow invokes search - input" time="0.012" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="down arrow invokes search - input" time="0.009" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="up arrow invokes search - textarea" time="0.01" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="down arrow invokes search - textarea" time="0.011" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="up arrow invokes search - contenteditable" time="0.009" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="down arrow invokes search - contenteditable" time="0.012" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="up arrow moves focus - input" time="0.016" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="down arrow moves focus - input" time="0.023" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="up arrow moves focus - textarea" time="0.016" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="down arrow moves focus - textarea" time="0.014" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="up arrow moves focus - contenteditable" time="0.017" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="down arrow moves focus - contenteditable" time="0.015" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: core" name="handle race condition" time="0.033" assertions="3">
+	</testcase>
+	<testcase classname="autocomplete: core" name="ARIA" time="0.045" assertions="7">
+	</testcase>
+	<testcase classname="autocomplete: events" name="all events - input" time="0.114" assertions="13">
+	</testcase>
+	<testcase classname="autocomplete: events" name="all events - textarea" time="0.108" assertions="13">
+	</testcase>
+	<testcase classname="autocomplete: events" name="all events - contenteditable" time="0.112" assertions="13">
+	</testcase>
+	<testcase classname="autocomplete: events" name="change without selection" time="0.029" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: events" name="cancel search" time="0.13" assertions="6">
+	</testcase>
+	<testcase classname="autocomplete: events" name="cancel focus" time="0.079" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: events" name="cancel select" time="0.085" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: events" name="blur during remote search" time="0.136" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: methods" name="destroy" time="0.022" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: methods" name="search, close" time="0.047" assertions="6">
+	</testcase>
+	<testcase classname="autocomplete: methods" name="widget" time="0.011" assertions="2">
+	</testcase>
+	<testcase classname="autocomplete: options" name="appendTo" time="0.067" assertions="5">
+	</testcase>
+	<testcase classname="autocomplete: options" name="autoFocus: false" time="0.041" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="autoFocus: true" time="0.041" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="delay" time="0.123" assertions="2">
+	</testcase>
+	<testcase classname="autocomplete: options" name="disabled" time="0.074" assertions="2">
+	</testcase>
+	<testcase classname="autocomplete: options" name="minLength" time="0.029" assertions="2">
+	</testcase>
+	<testcase classname="autocomplete: options" name="minLength, exceed then drop below" time="0.087" assertions="4">
+	</testcase>
+	<testcase classname="autocomplete: options" name="minLength, exceed then drop below then exceed" time="0.02" assertions="3">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, local string array" time="0.043" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, local object array, only label property" time="0.021" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, local object array, only value property" time="0.018" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, url string with remote json string array" time="0.044" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, url string with remote json object array, only value properties" time="0.039" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, url string with remote json object array, only label properties" time="0.039" assertions="1">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, custom" time="0.028" assertions="2">
+	</testcase>
+	<testcase classname="autocomplete: options" name="source, update after init" time="0.022" assertions="2">
+	</testcase>
+</testsuite>

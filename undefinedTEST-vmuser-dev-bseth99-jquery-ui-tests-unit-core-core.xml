@@ -1,0 +1,62 @@
+<testsuite name="undefined" errors="0" failures="0" tests="145" time="0" >
+	<testcase classname="core - jQuery extensions" name="JSHint" time="0.119" assertions="1">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="focus - original functionality" time="0.009" assertions="1">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="focus" time="0.523" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="zIndex" time="0.019" assertions="7">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="innerWidth - getter" time="0.01" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="innerWidth - setter" time="0.012" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="innerHeight - getter" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="innerHeight - setter" time="0.008" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerWidth - getter" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerWidth - setter" time="0.008" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerWidth(true) - getter" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerWidth(true) - setter" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerHeight - getter" time="0.006" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerHeight - setter" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerHeight(true) - getter" time="0.006" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="outerHeight(true) - setter" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="core - jQuery extensions" name="uniqueId / removeUniqueId" time="0.008" assertions="3">
+	</testcase>
+	<testcase classname="core - selectors" name="data" time="0.039" assertions="15">
+	</testcase>
+	<testcase classname="core - selectors" name="focusable - visible, enabled elements" time="0.03" assertions="18">
+	</testcase>
+	<testcase classname="core - selectors" name="focusable - disabled elements" time="0.009" assertions="9">
+	</testcase>
+	<testcase classname="core - selectors" name="focusable - hidden styles" time="0.013" assertions="8">
+	</testcase>
+	<testcase classname="core - selectors" name="focusable - natively focusable with various tabindex" time="0.011" assertions="4">
+	</testcase>
+	<testcase classname="core - selectors" name="focusable - not natively focusable with various tabindex" time="0.014" assertions="4">
+	</testcase>
+	<testcase classname="core - selectors" name="focusable - area elements" time="0.01" assertions="3">
+	</testcase>
+	<testcase classname="core - selectors" name="tabbable - visible, enabled elements" time="0.025" assertions="18">
+	</testcase>
+	<testcase classname="core - selectors" name="tabbable - disabled elements" time="0.009" assertions="9">
+	</testcase>
+	<testcase classname="core - selectors" name="tabbable - hidden styles" time="0.012" assertions="8">
+	</testcase>
+	<testcase classname="core - selectors" name="tabbable -  natively tabbable with various tabindex" time="0.009" assertions="4">
+	</testcase>
+	<testcase classname="core - selectors" name="tabbable -  not natively tabbable with various tabindex" time="0.008" assertions="4">
+	</testcase>
+	<testcase classname="core - selectors" name="tabbable - area elements" time="0.009" assertions="3">
+	</testcase>
+</testsuite>

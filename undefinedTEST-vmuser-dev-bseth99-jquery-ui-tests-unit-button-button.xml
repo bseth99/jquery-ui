@@ -1,0 +1,56 @@
+<testsuite name="undefined" errors="0" failures="0" tests="83" time="0" >
+	<testcase classname="button: common widget" name="JSHint" time="0.126" assertions="1">
+	</testcase>
+	<testcase classname="button: common widget" name="defined defaults" time="0.01" assertions="5">
+	</testcase>
+	<testcase classname="button: common widget" name="tested defaults" time="0.004" assertions="5">
+	</testcase>
+	<testcase classname="button: common widget" name="basic usage" time="0.035" assertions="3">
+	</testcase>
+	<testcase classname="button: common widget" name="version" time="0.003" assertions="1">
+	</testcase>
+	<testcase classname="button: core" name="checkbox" time="0.018" assertions="4">
+	</testcase>
+	<testcase classname="button: core" name="radios" time="0.028" assertions="4">
+	</testcase>
+	<testcase classname="button: core" name="radio groups" time="0.06" assertions="12">
+	</testcase>
+	<testcase classname="button: core" name="input type submit, don&apos;t create child elements" time="0.007" assertions="2">
+	</testcase>
+	<testcase classname="button: core" name="buttonset" time="0.028" assertions="6">
+	</testcase>
+	<testcase classname="button: core" name="buttonset (rtl)" time="0.023" assertions="6">
+	</testcase>
+	<testcase classname="button: methods" name="destroy" time="0.015" assertions="1">
+	</testcase>
+	<testcase classname="button: options" name="disabled, explicit value" time="0.019" assertions="4">
+	</testcase>
+	<testcase classname="button: options" name="disabled, null" time="0.021" assertions="4">
+	</testcase>
+	<testcase classname="button: options" name="text false without icon" time="0.012" assertions="1">
+	</testcase>
+	<testcase classname="button: options" name="text false with icon" time="0.01" assertions="1">
+	</testcase>
+	<testcase classname="button: options" name="label, default" time="0.011" assertions="2">
+	</testcase>
+	<testcase classname="button: options" name="label" time="0.008" assertions="2">
+	</testcase>
+	<testcase classname="button: options" name="label default with input type submit" time="0.006" assertions="2">
+	</testcase>
+	<testcase classname="button: options" name="label with input type submit" time="0.005" assertions="2">
+	</testcase>
+	<testcase classname="button: options" name="icons" time="0.008" assertions="1">
+	</testcase>
+	<testcase classname="button: tickets" name="#5946 - buttonset should ignore buttons that are not :visible" time="0.02" assertions="2">
+	</testcase>
+	<testcase classname="button: tickets" name="#6262 - buttonset not applying ui-corner to invisible elements" time="0.024" assertions="3">
+	</testcase>
+	<testcase classname="button: tickets" name="#6711 Checkbox/Radiobutton do not Show Focused State when using Keyboard Navigation" time="0.015" assertions="2">
+	</testcase>
+	<testcase classname="button: tickets" name="#7092 - button creation that requires a matching label does not find label in all cases" time="0.022" assertions="5">
+	</testcase>
+	<testcase classname="button: tickets" name="#7534 - Button label selector works for ids with &quot;:&quot;" time="0.005" assertions="1">
+	</testcase>
+	<testcase classname="button: tickets" name="#8237 - Anchor tags lose disabled state when refreshed" time="0.013" assertions="1">
+	</testcase>
+</testsuite>

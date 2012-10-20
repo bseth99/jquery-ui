@@ -1,0 +1,38 @@
+<testsuite name="undefined" errors="0" failures="0" tests="41" time="0" >
+	<testcase classname="progressbar: common widget" name="JSHint" time="0.083" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: common widget" name="defined defaults" time="0.006" assertions="4">
+	</testcase>
+	<testcase classname="progressbar: common widget" name="tested defaults" time="0.003" assertions="4">
+	</testcase>
+	<testcase classname="progressbar: common widget" name="basic usage" time="0.04" assertions="3">
+	</testcase>
+	<testcase classname="progressbar: common widget" name="version" time="0.003" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: core" name="accessibility" time="0.019" assertions="7">
+	</testcase>
+	<testcase classname="progressbar: events" name="create" time="0.005" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: events" name="change" time="0.007" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: events" name="complete" time="0.012" assertions="3">
+	</testcase>
+	<testcase classname="progressbar: methods" name="destroy" time="0.02" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: methods" name="value" time="0.016" assertions="3">
+	</testcase>
+	<testcase classname="progressbar: methods" name="widget" time="0.008" assertions="2">
+	</testcase>
+	<testcase classname="progressbar: options" name="{ value : 0 }, default" time="0.005" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: options" name="value: visibility of valueDiv" time="0.022" assertions="5">
+	</testcase>
+	<testcase classname="progressbar: options" name="{ value : 5 }" time="0.005" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: options" name="{ value : -5 }" time="0.007" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: options" name="{ value : 105 }" time="0.006" assertions="1">
+	</testcase>
+	<testcase classname="progressbar: options" name="{ max : 5, value : 10 }" time="0.005" assertions="1">
+	</testcase>
+</testsuite>
