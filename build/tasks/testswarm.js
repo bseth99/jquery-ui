@@ -1,5 +1,6 @@
-/*jshint node: true */
 module.exports = function( grunt ) {
+
+"use strict";
 
 var versions = {
 		"git": "git",
@@ -9,7 +10,6 @@ var versions = {
 	},
 	tests = {
 		"Accordion": "accordion/accordion.html",
-		"Accordion_deprecated": "accordion/accordion_deprecated.html",
 		"Autocomplete": "autocomplete/autocomplete.html",
 		"Button": "button/button.html",
 		"Core": "core/core.html",
@@ -20,7 +20,6 @@ var versions = {
 		"Effects": "effects/effects.html",
 		"Menu": "menu/menu.html",
 		"Position": "position/position.html",
-		"Position_deprecated": "position/position_deprecated.html",
 		"Progressbar": "progressbar/progressbar.html",
 		//"resizable/resizable.html",
 		//"selectable/selectable.html",
@@ -28,7 +27,6 @@ var versions = {
 		//"sortable/sortable.html",
 		"Spinner": "spinner/spinner.html",
 		"Tabs": "tabs/tabs.html",
-		"Tabs_deprecated": "tabs/tabs_deprecated.html",
 		"Tooltip": "tooltip/tooltip.html",
 		"Widget": "widget/widget.html"
 	};

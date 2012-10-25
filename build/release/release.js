@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /*global cat:true cd:true cp:true echo:true exec:true exit:true ls:true*/
 
+"use strict";
+
 var baseDir, repoDir, prevVersion, newVersion, nextVersion, tagTime,
 	fs = require( "fs" ),
 	path = require( "path" ),
@@ -423,7 +425,7 @@ function abort( msg ) {
 function walk( methods ) {
 	var method = methods.shift();
 
-	function next( error ) {
+	function next() {
 		if ( methods.length ) {
 			walk( methods );
 		}

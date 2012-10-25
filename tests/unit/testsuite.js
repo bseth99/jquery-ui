@@ -12,6 +12,10 @@ function includeScript( url ) {
 	document.write( "<script src='../../../" + url + "'></script>" );
 }
 
+function url( value ) {
+	return value + (/\?/.test(value) ? "&" : "?") + new Date().getTime() + "" + parseInt(Math.random() * 100000, 10);
+}
+
 reset = QUnit.reset;
 QUnit.reset = function() {
 	// Ensure jQuery events and data on the fixture are properly removed
@@ -65,11 +69,11 @@ TestHelpers.testJshint = function( module ) {
 
 		$.when(
 			$.ajax({
-				url: "../../../ui/.jshintrc",
+				url: url("../../../ui/.jshintrc"),
 				dataType: "json"
 			}),
 			$.ajax({
-				url: "../../../ui/jquery.ui." + module + ".js",
+				url: url("../../../ui/jquery.ui." + module + ".js"),
 				dataType: "text"
 			})
 		).done(function( hintArgs, srcArgs ) {
@@ -112,7 +116,7 @@ function testWidgetDefaults( widget, defaults ) {
 	// ensure that all defaults were tested
 	test( "tested defaults", function() {
 		var count = 0;
-		$.each( pluginDefaults, function( key, val ) {
+		$.each( pluginDefaults, function( key ) {
 			expect( ++count );
 			ok( key in defaults, key );
 		});
@@ -223,7 +227,7 @@ window.domEqual = function( selector, modifier, message ) {
 		delete result.data[ $.expando ];
 		children = elem.children();
 		if ( children.length ) {
-			result.children = elem.children().map(function( ind ) {
+			result.children = elem.children().map(function() {
 				return extract( $( this ) );
 			}).get();
 		} else {
