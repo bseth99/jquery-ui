@@ -190,7 +190,7 @@ $.widget( "ui.autocomplete", {
 			})
 			.zIndex( this.element.zIndex() + 1 )
 			.hide()
-			.data( "menu" );
+			.data( "ui-menu" );
 
 		this._on( this.menu.element, {
 			mousedown: function( event ) {
@@ -287,10 +287,6 @@ $.widget( "ui.autocomplete", {
 			})
 			.addClass( "ui-helper-hidden-accessible" )
 			.insertAfter( this.element );
-
-		if ( $.fn.bgiframe ) {
-			this.menu.element.bgiframe();
-		}
 
 		// turning off autocomplete prevents the browser from remembering the
 		// value when navigating through history, so we re-enable autocomplete

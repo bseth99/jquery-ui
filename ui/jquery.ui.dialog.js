@@ -170,10 +170,6 @@ $.widget("ui.dialog", {
 		this._createButtons( options.buttons );
 		this._isOpen = false;
 
-		if ( $.fn.bgiframe ) {
-			uiDialog.bgiframe();
-		}
-
 		// prevent tabbing out of dialogs
 		this._on( uiDialog, { keydown: function( event ) {
 			if ( event.keyCode !== $.ui.keyCode.TAB ) {
@@ -338,15 +334,18 @@ $.widget("ui.dialog", {
 		}
 		if ( hasButtons ) {
 			$.each( buttons, function( name, props ) {
+				var button, click;
 				props = $.isFunction( props ) ?
 					{ click: props, text: name } :
 					props;
-				var button = $( "<button type='button'></button>" )
-					.attr( props, true )
-					.unbind( "click" )
-					.click(function() {
-						props.click.apply( that.element[0], arguments );
-					})
+				// Default to a non-submitting button
+				props = $.extend( { type: "button" }, props );
+				// Change the context for the click callback to be the main element
+				click = props.click;
+				props.click = function() {
+					click.apply( that.element[0], arguments );
+				};
+				button = $( "<button></button>", props )
 					.appendTo( that.uiButtonSet );
 				if ( $.fn.button ) {
 					button.button();
@@ -517,7 +516,7 @@ $.widget("ui.dialog", {
 		if ( resize ) {
 			this._size();
 		}
-		if ( this.uiDialog.is( ":data(resizable)" ) ) {
+		if ( this.uiDialog.is( ":data(ui-resizable)" ) ) {
 			this.uiDialog.resizable( "option", resizableOptions );
 		}
 	},
@@ -547,7 +546,7 @@ $.widget("ui.dialog", {
 				}
 				break;
 			case "draggable":
-				isDraggable = uiDialog.is( ":data(draggable)" );
+				isDraggable = uiDialog.is( ":data(ui-draggable)" );
 				if ( isDraggable && !value ) {
 					uiDialog.draggable( "destroy" );
 				}
@@ -561,7 +560,7 @@ $.widget("ui.dialog", {
 				break;
 			case "resizable":
 				// currently resizable, becoming non-resizable
-				isResizable = uiDialog.is( ":data(resizable)" );
+				isResizable = uiDialog.is( ":data(ui-resizable)" );
 				if ( isResizable && !value ) {
 					uiDialog.resizable( "destroy" );
 				}
@@ -587,12 +586,11 @@ $.widget("ui.dialog", {
 	},
 
 	_size: function() {
-		/* If the user has resized the dialog, the .ui-dialog and .ui-dialog-content
-		 * divs will both have width and height set, so we need to reset them
-		 */
-		var nonContentHeight, minContentHeight, autoHeight,
-			options = this.options,
-			isVisible = this.uiDialog.is( ":visible" );
+
+		// If the user has resized the dialog, the .ui-dialog and .ui-dialog-content
+		// divs will both have width and height set, so we need to reset them
+		var nonContentHeight, minContentHeight,
+			options = this.options;
 
 		// reset content sizing
 		this.element.show().css({
@@ -615,25 +613,15 @@ $.widget("ui.dialog", {
 		minContentHeight = Math.max( 0, options.minHeight - nonContentHeight );
 
 		if ( options.height === "auto" ) {
-			// only needed for IE6 support
-			if ( $.support.minHeight ) {
-				this.element.css({
-					minHeight: minContentHeight,
-					height: "auto"
-				});
-			} else {
-				this.uiDialog.show();
-				autoHeight = this.element.css( "height", "auto" ).height();
-				if ( !isVisible ) {
-					this.uiDialog.hide();
-				}
-				this.element.height( Math.max( autoHeight, minContentHeight ) );
-			}
+			this.element.css({
+				minHeight: minContentHeight,
+				height: "auto"
+			});
 		} else {
 			this.element.height( Math.max( options.height - nonContentHeight, 0 ) );
 		}
 
-		if (this.uiDialog.is( ":data(resizable)" ) ) {
+		if (this.uiDialog.is( ":data(ui-resizable)" ) ) {
 			this.uiDialog.resizable( "option", "minHeight", this._minHeight() );
 		}
 	}
@@ -669,10 +657,6 @@ $.extend( $.ui.dialog.overlay, {
 		$el.bind( "mousedown", function( event ) {
 			dialog._keepFocus( event );
 		});
-
-		if ( $.fn.bgiframe ) {
-			$el.bgiframe();
-		}
 
 		this.instances.push( $el );
 		return $el;

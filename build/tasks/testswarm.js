@@ -4,7 +4,7 @@ module.exports = function( grunt ) {
 
 var versions = {
 		"git": "git",
-		"1.8": "1.8.0 1.8.1 1.8.2",
+		"1.8": "1.8.0 1.8.1 1.8.2 1.8.3",
 		"1.7": "1.7 1.7.1 1.7.2",
 		"1.6": "1.6 1.6.1 1.6.2 1.6.3 1.6.4"
 	},
@@ -13,18 +13,18 @@ var versions = {
 		"Autocomplete": "autocomplete/autocomplete.html",
 		"Button": "button/button.html",
 		"Core": "core/core.html",
-		//"datepicker/datepicker.html",
-		//"dialog/dialog.html",
-		//"draggable/draggable.html",
-		//"droppable/droppable.html",
+		"Datepicker": "datepicker/datepicker.html",
+		"Dialog": "dialog/dialog.html",
+		"Draggable": "draggable/draggable.html",
+		"Droppable": "droppable/droppable.html",
 		"Effects": "effects/effects.html",
 		"Menu": "menu/menu.html",
 		"Position": "position/position.html",
 		"Progressbar": "progressbar/progressbar.html",
-		//"resizable/resizable.html",
-		//"selectable/selectable.html",
-		//"slider/slider.html",
-		//"sortable/sortable.html",
+		"Resizable": "resizable/resizable.html",
+		"Selectable": "selectable/selectable.html",
+		"Slider": "slider/slider.html",
+		"Sortable": "sortable/sortable.html",
 		"Spinner": "spinner/spinner.html",
 		"Tabs": "tabs/tabs.html",
 		"Tooltip": "tooltip/tooltip.html",
@@ -51,9 +51,9 @@ function submit( commit, tests, configFile, version, done ) {
 		authToken: config.authToken,
 		jobName: 'jQuery UI ' + version + '#<a href="https://github.com/jquery/jquery-ui/commit/' + commit + '">' + commit.substr( 0, 10 ) + '</a>',
 		runMax: config.runMax,
-		"runNames[]": Object.keys(tests),
+		"runNames[]": Object.keys( tests ),
 		"runUrls[]": testUrls,
-		"browserSets[]": ["popular"]
+		"browserSets[]": [ "popular-no-ie6" ]
 	});
 }
 
