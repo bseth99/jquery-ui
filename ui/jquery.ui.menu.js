@@ -323,7 +323,7 @@ $.widget( "ui.menu", {
 		menus.children( ":not(.ui-menu-item)" ).each(function() {
 			var item = $( this );
 			// hyphen, em dash, en dash
-			if ( !/[^\-—–\s]/.test( item.text() ) ) {
+			if ( !/[^\-\u2014\u2013\s]/.test( item.text() ) ) {
 				item.addClass( "ui-widget-content ui-menu-divider" );
 			}
 		});
@@ -349,6 +349,11 @@ $.widget( "ui.menu", {
 			this.element.find( ".ui-menu-icon" )
 				.removeClass( this.options.icons.submenu )
 				.addClass( value.submenu );
+		}
+		if ( key === "disabled" ) {
+			this.element
+				.toggleClass( "ui-state-disabled", !!value )
+				.attr( "aria-disabled", value );
 		}
 		this._super( key, value );
 	},
