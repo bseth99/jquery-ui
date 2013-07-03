@@ -10,17 +10,21 @@
  */
  
 .ui-spinner { 
-	position:relative; 
+	position: relative; 
 	display: inline-block; 
 	overflow: hidden; 
 	padding: 0; 
 	vertical-align: middle; 
 }
 .ui-spinner-input { 
-	border: none; 
-	background: none; 
-	padding: 0; 
-	vertical-align: middle; 
+	border: none;
+	background: none;
+	color: inherit;
+	padding: 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 22px; 
 }
 .ui-spinner-right .ui-spinner-input { 
 	margin: .2em 0; 
